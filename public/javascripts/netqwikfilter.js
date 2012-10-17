@@ -75,6 +75,11 @@ function socket_stop() {
   socket.removeListener( 'cdr', put_cdr )
   socket.disconnect();
 }
+function socket_increment(){
+	console.log('clicked inc');
+	socket.emit('increment');
+};
 dojo.connect( dojo.byId( 'startStream' ), 'click', socket_start)
 dojo.connect( dojo.byId( 'stopStream' ), 'click', socket_stop)
+dojo.connect( dojo.byId( 'increment' ), 'click', socket_increment)
 };
