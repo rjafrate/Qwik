@@ -1,6 +1,6 @@
 ## Description
 
-This is a real-time CDR read stream
+This is a real-time Controller read stream
 
 ## Features
 
